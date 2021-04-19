@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_19_134713) do
+ActiveRecord::Schema.define(version: 2021_04_19_151810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,23 @@ ActiveRecord::Schema.define(version: 2021_04_19_134713) do
     t.text "comment"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "applications", force: :cascade do |t|
+    t.boolean "house"
+    t.bigint "accaunt_id"
+    t.bigint "applicant_id"
+    t.text "description"
+    t.integer "phone"
+    t.boolean "urgent"
+    t.boolean "emergency"
+    t.datetime "whishedtime"
+    t.datetime "plannedtime"
+    t.string "status"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["accaunt_id"], name: "index_applications_on_accaunt_id"
+    t.index ["applicant_id"], name: "index_applications_on_applicant_id"
   end
 
 end

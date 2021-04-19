@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  house: false
+  accaunt: 
+  applicant: 
+  description: MyText
+  phone: 1
+  urgent: false
+  emergency: false
+  whishedtime: 2021-04-19 23:18:10
+  plannedtime: 2021-04-19 23:18:10
+  status: MyString
+
+two:
+  house: false
+  accaunt: 
+  applicant: 
+  description: MyText
+  phone: 1
+  urgent: false
+  emergency: false
+  whishedtime: 2021-04-19 23:18:10
+  plannedtime: 2021-04-19 23:18:10
+  status: MyString
